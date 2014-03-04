@@ -1,9 +1,6 @@
 module Movie::ProcessMovieData
   extend ActiveSupport::Concern
   include Movie::ProcessMovieData::BBC
-
-  module ClassMethods
-
-  end
+  include Movie::ProcessMovieData::TheMovieDB
 
 end
