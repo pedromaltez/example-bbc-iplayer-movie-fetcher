@@ -8,6 +8,8 @@ module Movie::FetchMovieData::TheMovieDB
       JSON.parse(open(movie_db_search_url(movie_title)).read)
     end
 
+    # TODO
+    # Incorporate this into the app
     def get_movie_db(movie_db_id)
       JSON.parse(open(movie_db_get_url(movie_db_id)).read)
     end

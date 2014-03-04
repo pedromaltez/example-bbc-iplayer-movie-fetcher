@@ -15,6 +15,9 @@ module Movie::ProcessMovieData::TheMovieDB
 
   private
 
+    # TODO
+    # This should be dynamic instead of being stored in the database,
+    # as per http://docs.themoviedb.apiary.io/#configuration
     def movie_db_image_url(image_path)
       "http://image.tmdb.org/t/p/original" + image_path
     end
@@ -34,6 +37,10 @@ module Movie::ProcessMovieData::TheMovieDB
         end
       end
     end
+
+    # TODO
+    # Process individual movie information from
+    # Movie::FetchMovieData::TheMovieDB.get_movie_db(movie_db_id)
 
     private
 
