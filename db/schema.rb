@@ -11,6 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140302162413) do
+
+  create_table "movies", force: true do |t|
+    t.string   "title"
+    t.string   "bbc_programme_pid"
+    t.string   "bbc_programme_image_pid"
+    t.string   "movie_db_id"
+    t.string   "movie_db_poster_path"
+    t.string   "movie_db_backdrop_path"
+    t.string   "synopsis"
+    t.integer  "duration"
+    t.float    "rating"
+    t.datetime "available_at"
+    t.datetime "expires_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
