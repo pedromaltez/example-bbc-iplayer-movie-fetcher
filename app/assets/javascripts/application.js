@@ -1,2 +1,12 @@
 //= require_self
+//= require jquery
+//= require underscore
+//= require handlebars
+//= require backbone
+//= require letolab_web_developer_test
+//= require_tree ../templates
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require_tree ./routers
 //= require_tree .

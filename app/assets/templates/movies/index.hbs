@@ -1,0 +1,16 @@
+{{#each movies.models}}
+  <div>
+    {{title}}
+    {{#if attributes.image_url}}
+      {{attributes.image_url}}
+    {{/if}}
+    {{attributes.synopsis}}
+      {{attributes.watch_url}}
+    {{#if attributes.movie_db_url}}
+      {{attributes.movie_db_url}}
+    {{/if}}
+    {{#if attributes.rating}}
+      {{attributes.rating}}
+    {{/if}}
+  </div>
+{{/each}}
