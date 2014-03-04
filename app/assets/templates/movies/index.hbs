@@ -1,16 +1,18 @@
 {{#each movies.models}}
-  <div>
-    {{title}}
+  <article class="Movie">
+    <h1 class="Movie__title"> {{attributes.title}} </h1>
     {{#if attributes.image_url}}
-      {{attributes.image_url}}
+      <img class="Movie__image" src="{{attributes.image_url}}"/>
     {{/if}}
-    {{attributes.synopsis}}
-      {{attributes.watch_url}}
-    {{#if attributes.movie_db_url}}
-      {{attributes.movie_db_url}}
+    <p class="Movie__synopsis"> {{attributes.synopsis}} </p>
+    <a href="{{attributes.watch_url}}">Watch</a>
+    {{#if attributes.movie_db_url}}    
+      <a href="{{attributes.movie_db_url}}">More information...</a>
     {{/if}}
     {{#if attributes.rating}}
-      {{attributes.rating}}
+      <span class="Movie__rating" title="TheMovieDb rating">
+        {{attributes.rating}}
+      </span>
     {{/if}}
-  </div>
+  </article>
 {{/each}}

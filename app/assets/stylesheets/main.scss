@@ -1,0 +1,22 @@
+html {
+  font-size: 62.5%;
+  color: rgba(164, 180, 189, 1);
+  background: rgba(67, 87, 105, 1);
+  font-family: sans-serif;
+}
+
+body {
+  @include font-size(1.8);
+}
+
+::-moz-selection {
+  background: rgba(88, 72, 21, 1);
+}
+
+::selection {
+  background: rgba(88, 72, 21, 1);
+}
+
+a {
+ color: rgba(192, 177, 64, 1); 
+}
