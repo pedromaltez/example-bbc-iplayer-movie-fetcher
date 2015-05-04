@@ -11,7 +11,7 @@ Most dependencies are listed in the Gemfile and handled by bundler.
 Ensure you have installed:
 
 * SQLite 3.6.16
-* Ruby (2.0.0-p0 was used here, but 1.9.3 and higher should be fine)
+* Ruby (2.2.0 was used here, but 2.0.0 and higher should be fine)
 * Bundler gem
 
 ### Bundler
