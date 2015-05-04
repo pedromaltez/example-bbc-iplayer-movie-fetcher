@@ -16,7 +16,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   # Debugging
-  gem "debugger"
+  gem "byebug"
 
   # Environment variable loader
   gem "dotenv-rails"
